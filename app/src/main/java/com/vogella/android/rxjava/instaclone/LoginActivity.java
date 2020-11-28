@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (e != null) {
                     // Todo: let user know what is happening
                     Log.e(TAG, "Issue with login", e);
+                    Toast.makeText(LoginActivity.this, "Login error", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 goToMainActivity();
